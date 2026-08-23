@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Waz1ini - مضلامة ❤️</title>
-    <!-- خط حديث وعصري -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <!-- مكتبة الأيقونات FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/org/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --bg-color: #0b0b0e;
@@ -57,7 +54,6 @@
             font-size: 1.4rem;
             font-weight: 800;
             margin-bottom: 6px;
-            letter-spacing: -0.3px;
             background: linear-gradient(45deg, #fff, #a1a1a6);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -137,44 +133,51 @@
         .social-title {
             font-size: 0.85rem;
             color: var(--text-muted);
-            margin-bottom: 14px;
+            margin-bottom: 16px;
             font-weight: 600;
         }
 
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 16px;
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
         }
 
         .social-btn {
-            width: 50px;
-            height: 50px;
+            height: 48px;
             border-radius: 14px;
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 255, 255, 0.1);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--text-main);
-            font-size: 1.3rem;
+            color: #ffffff;
             text-decoration: none;
             transition: all 0.2s ease;
         }
 
-        .social-btn:hover, .social-btn:active {
-            transform: translateY(-3px);
-            background: rgba(255, 255, 255, 0.12);
+        .social-btn svg {
+            width: 22px;
+            height: 22px;
+            fill: currentColor;
         }
 
-        .social-btn.instagram:hover { color: #e1306c; border-color: #e1306c; }
-        .social-btn.youtube:hover { color: #ff0000; border-color: #ff0000; }
-        .social-btn.facebook:hover { color: #1877f2; border-color: #1877f2; }
+        .social-btn:active {
+            transform: scale(0.92);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .instagram:hover { color: #e1306c; border-color: #e1306c; }
+        .youtube:hover { color: #ff0000; border-color: #ff0000; }
+        .tiktok:hover { color: #00f2fe; border-color: #00f2fe; }
+        .facebook:hover { color: #1877f2; border-color: #1877f2; }
+        .twitter:hover { color: #1da1f2; border-color: #1da1f2; }
+        .spotify:hover { color: #1ed760; border-color: #1ed760; }
 
         .footer-note {
             font-size: 0.78rem;
             color: rgba(255, 255, 255, 0.4);
-            margin-top: 16px;
+            margin-top: 18px;
             line-height: 1.4;
         }
     </style>
@@ -183,7 +186,7 @@
 
 <div class="container">
     
-    <!-- العنوان والرسالة التأثيرية -->
+    <!-- العنوان والعبارة المؤثرة -->
     <h1 class="artist-title">Waz1ini - مضلامة ❤️</h1>
     <p class="emotional-quote">
         "مظلامة ماشي غير أغنية... هي صرخة روح عيات من الغدر والوحدة."<br>
@@ -195,32 +198,54 @@
         <iframe src="https://www.instagram.com/reel/DcLf7XPMrpT/embed" allowtransparency="true"></iframe>
     </div>
 
-    <!-- الأزرار التفاعلية -->
+    <!-- الأزرار الرئيسية -->
     <div class="actions-list">
         <a href="https://www.instagram.com/waz1ini/" target="_blank" class="btn btn-ig">
-            <i class="fa-brands label-icon fa-instagram"></i>
+            <svg style="width:20px;height:20px;fill:currentColor;" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
             <span>الانتقال إلى الحساب الرسمي للفنان على إنستغرام</span>
         </a>
 
         <a href="https://www.instagram.com/reel/DcLf7XPMrpT/" target="_blank" class="btn btn-reel">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <svg style="width:18px;height:18px;fill:currentColor;" viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
             <span>فتح الفيديو في إنستغرام للتفاعل والبارطاج</span>
         </a>
     </div>
 
-    <!-- منصات التواصل الاجتماعي -->
+    <!-- شبكة أزرار التواصل الاجتماعي بالأيقونات -->
     <div class="social-section">
         <p class="social-title">تابع جديد العمل والموسيقى على المنصات الرسمية</p>
-        <div class="social-icons">
+        <div class="social-grid">
+            
+            <!-- Instagram -->
             <a href="https://www.instagram.com/waz1ini/" target="_blank" class="social-btn instagram" title="Instagram">
-                <i class="fa-brands fa-instagram"></i>
+                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
             </a>
+
+            <!-- YouTube -->
             <a href="https://www.youtube.com/@waz1ini" target="_blank" class="social-btn youtube" title="YouTube">
-                <i class="fa-brands fa-youtube"></i>
+                <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
             </a>
-            <a href="https://www.facebook.com/waz1ini" target="_blank" class="social-btn facebook" title="Facebook">
-                <i class="fa-brands fa-facebook-f"></i>
+
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@waz1ini" target="_blank" class="social-btn tiktok" title="TikTok">
+                <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.07-1.3 1.8-.24.84-.08 1.77.35 2.51.58.98 1.71 1.57 2.84 1.52 1.25-.01 2.41-.68 2.99-1.78.3-.55.45-1.18.45-1.81V.02z"/></svg>
             </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/share/19A7nUbkM1/" target="_blank" class="social-btn facebook" title="Facebook">
+                <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+
+            <!-- Twitter / X -->
+            <a href="https://x.com/waz1ini" target="_blank" class="social-btn twitter" title="X (Twitter)">
+                <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+
+            <!-- Spotify -->
+            <a href="https://open.spotify.com/artist/7tJtnRleyClaWyN4Vyp6sr?si=EXEB0ojISum0S20Qar0LvA" target="_blank" class="social-btn spotify" title="Spotify">
+                <svg viewBox="0 0 24 24"><path d="M12 0C5.376 0 0 5.377 0 12s5.376 12 12 12 12-5.377 12-12S18.624 0 12 0zm5.521 17.341c-.217.357-.681.469-1.038.252-2.846-1.74-6.429-2.13-10.651-1.163-.404.093-.812-.162-.904-.567-.093-.404.162-.812.567-.904 4.621-1.056 8.577-.611 11.774 1.346.357.218.469.682.252 1.036zm1.472-3.273c-.273.444-.858.586-1.302.313-3.256-2.001-8.223-2.582-12.076-1.412-.5.152-1.028-.133-1.18-.633-.152-.5.133-1.028.633-1.18 4.409-1.338 9.897-.69 13.612 1.599.445.273.587.859.313 1.313zm.127-3.418C15.228 8.48 8.8 8.267 5.12 9.385c-.611.186-1.257-.168-1.442-.779-.186-.612.168-1.257.779-1.442 4.232-1.285 11.317-1.033 15.688 1.564.55.327.734 1.037.407 1.587-.327.55-1.037.734-1.587.407z"/></svg>
+            </a>
+
         </div>
     </div>
 
